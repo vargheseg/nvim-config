@@ -21,3 +21,4 @@ o.updatetime = 250
 o.matchpairs:append("<:>")
 o.laststatus = 3
 o.showtabline = 2
+o.clipboard = "unnamedplus"

@@ -9,7 +9,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
--- 
+require "configs.clipboard"
+
 -- load plugins
 require("lazy").setup({
   { import = "plugins" },
