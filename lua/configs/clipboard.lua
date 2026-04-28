@@ -1,4 +1,7 @@
-if vim.env.SSH_TTY or vim.env.SSH_CONNECTION then
+local is_ssh = vim.env.SSH_TTY or vim.env.SSH_CONNECTION
+local is_docker = vim.loop.fs_stat("./dockerenv") ~= nil
+
+if is_ssh or is_docker then
   local ok, osc52 = pcall(require, "vim.ui.clipboard.osc52")
   if ok then
     -- Helper: paste from Neovim's internal "" register (so local p/yy still work)
