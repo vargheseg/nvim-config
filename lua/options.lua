@@ -1,5 +1,3 @@
--- add yours here!
-
 local o = vim.opt
 o.cursorlineopt ='both'
 o.cursorcolumn = true
@@ -21,3 +19,5 @@ o.updatetime = 250
 o.matchpairs:append("<:>")
 o.laststatus = 3
 o.showtabline = 2
+
+vim.g.mapleader = " "
